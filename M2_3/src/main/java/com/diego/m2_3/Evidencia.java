@@ -11,12 +11,13 @@ import java.io.File;
  *
  * @author Diego
  */
+//Representa una evidencia enviada por el alumno.
 public class Evidencia {
-    int calificacion;
-    String nombre;
-    File archivo;
-    Alumno dueno;
-    
+    int calificacion; //Representa la calificacion que se le asignara a la evidencia.
+    String nombre; //Representa el nombre la evidencia.
+    File archivo; //Representa el archivo entregado.
+    Alumno dueno; //Representa al dueno original del archivo.
+    //Constructor vacio de clase Evidencia.
     public Evidencia()
     {
         calificacion = 0;
@@ -24,7 +25,7 @@ public class Evidencia {
         dueno = null;
         archivo = null;
     }
-
+    //Constructor de clase Evidencia.
     public Evidencia(int c, String n, File a, Alumno d)
     {
         this.calificacion = c;
@@ -32,7 +33,7 @@ public class Evidencia {
         this.archivo = a;
         this.dueno = d;
     }
-    
+    //---------Setters y Getters de los atributos-----------
     public Alumno getDueno() {
         return dueno;
     }

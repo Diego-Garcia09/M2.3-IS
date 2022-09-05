@@ -9,16 +9,18 @@ package com.diego.m2_3;
  *
  * @author Diego
  */
+//La clase UI representa la plataforma de donde se recolecta las evidencias,
+//donde se califican las evidencias y la lista de alumnos.
 public class UI {
-    Evidencia[] evidencias;
-    Alumno[] alumnos;
-    
+    Evidencia[] evidencias; //Arreglo de todas las evidencias a calificar.
+    Alumno[] alumnos; //Arreglo de la lista de alumnos.
+    //Cosntructor vacio de la clase UI.
     public UI()
     {
         evidencias = null;
         alumnos = null;
     }
-
+//----------------Setters y Getters de la clase----------------------
     public Evidencia[] getEvidencias() {
         return evidencias;
     }

@@ -9,18 +9,19 @@ package com.diego.m2_3;
  *
  * @author Diego
  */
+//Clase que representa al alumno que entrega las tareas.
 public class Alumno {
-    String nombre;
-    String matricula;
-    String correo;
-    
+    String nombre; //Representa el nombre del alumno.
+    String matricula; //Representa la matricula del alumno.
+    String correo; //Representa el correo del alumno.
+    //Constructor de la clase Alumno
     public Alumno(String nombre, String matricula, String correo)
     {
         this.nombre = nombre;
         this.matricula = matricula;
         this.correo = correo;
     }
-
+//------------------Setters y Getters de los atributos--------------------
     public String getNombre() {
         return nombre;
     }
